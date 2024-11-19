@@ -1,4 +1,4 @@
-
+/* 
 *{
     margin:0px;
     padding:0px;
@@ -72,7 +72,7 @@ border-bottom-left-radius:12px;
     text-decoration: none;
     color:white;
 }
-/*---banner------------*/
+/*---banner------------
 .banner{
     width:90%;
     height:600px;
@@ -83,7 +83,7 @@ border-bottom-left-radius:12px;
 .items{
     width:21%;
     height:600px;
-    /*border:2px solid black;*/
+    /*border:2px solid black;
     margin-right: 1%;
     background-color: white;
 }
@@ -118,7 +118,7 @@ a{
     text-decoration: none;
 }
 
-/*-------------menu section----------*/
+/*-------------menu section----------
 .menu{
     width:90%;
     height:70px;
@@ -132,7 +132,7 @@ a{
     border-radius: 10px;
 
 }
-/*--------------menu2--------------*/
+/*--------------menu2--------------
 .menu2{
     display:flex;
     width:90%;
@@ -146,7 +146,7 @@ a{
 h3{
     text-align: center;
 }
-/*--------------flash sale---------*/
+/*--------------flash sale---------
     
 .flash{
     display:flex;
@@ -157,7 +157,7 @@ h3{
     justify-content: space-evenly;
     align-items: center;
 }
-/*----------CATEGORIES-----------------*/
+/*----------CATEGORIES-----------------
 .categories{
     display:flex;
     width:90%;
@@ -167,7 +167,7 @@ h3{
     justify-content: space-evenly;
     align-items: center;
 }
-/*--------------------JUST FOR YOU----------*/
+/*--------------------JUST FOR YOU----------
 .just{
     display:flex;
     width:90%;
@@ -189,7 +189,219 @@ h3{
     color:black;
     padding-top: 100px;
     
+}*/
+
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-color: #ca303056;
+    font-family: Arial, sans-serif;
+}
 
+.navbar1 {
+    background-color: orangered;
+    width: 100%;
+    height: 25px; 
+    font-size: 20px; 
+    color: white;  
+}
 
+.nav {
+    margin-right: 20px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar2 {
+    height: 70px;
+    width: 100%;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 180px; 
+}
+
+#navinput {
+    width: 60%;
+    max-width: 700px;
+    height: 45px;
+    font-size: 20px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#navinput2 {
+    cursor: pointer;
+    width: auto;
+    height: 45px;
+    display: flex;
+    background-color: #f7f3f3af;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+#user1, #signup, #en, #cart {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Banner Section */
+.banner {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    aspect-ratio: 16/9;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.items {
+    flex: 1;
+    min-width: 21%;
+    margin-right: 1%;
+    background-color: white;
+}
+
+.banning {
+    flex: 4;
+    border: 2px solid black;
+    background-image: url(banner4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banning:hover {
+    background-image: url(banner2.jpg);
+}
+
+li {
+    font-size: 25px;
+}
+
+.position1, .position2 {
+    position: absolute;
+    top: 280px;
+    left: 10px;
+    background-color: bisque;
+    padding: 10px;
+}
+
+/* Menu Section */
+.menu {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    background-color: burlywood;
+    font-size: 18px;
+    margin: 20px auto;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+/* Sub-Menus */
+.menu2, .flash, .categories, .just {
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    margin: 30px auto;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    margin: 50px auto;
+    background-color: rgb(41, 73, 69);
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: black;
+    padding: 50px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navinput {
+        width: 80%;
+    }
+
+    .navbar2 {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .banner {
+        flex-direction: column;
+        aspect-ratio: unset;
+    }
+
+    .items {
+        min-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .banning {
+        flex: unset;
+        width: 100%;
+    }
+
+    .menu, .menu2, .flash, .categories, .just {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    #navinput {
+        font-size: 16px;
+    }
+
+    .nav, #user1, #signup, #en, #cart {
+        font-size: 14px;
+    }
+
+    li {
+        font-size: 18px;
+    }
+}
